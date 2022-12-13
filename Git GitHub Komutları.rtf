@@ -1,0 +1,112 @@
+{\rtf1\ansi\ansicpg1254\cocoartf2706
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red199\green200\blue201;\red20\green22\blue25;}
+{\*\expandedcolortbl;;\cssrgb\c81961\c82353\c82745;\cssrgb\c10196\c11373\c12941;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 GIT KOMUTLARI\cb1 \
+\cb3 ---------------\cb1 \
+\cb3 - 1. git init --> Local repo olu\uc0\u351 turmak i\'e7in yani git ile klas\'f6r\'fcm\'fcz\'fcn i\'e7indeki dosyalar\u305 \cb1 \
+\cb3 ili\uc0\u351 kilendirmek i\'e7in kullan\u305 l\u305 r\cb1 \
+\cb3 - 2. git add . --> Working space'deki (yani yerel) dosyadar\uc0\u305 m\u305  staging area'ya\cb1 \
+\cb3 (yani commitlemek i\'e7in beklenen yer) g\'f6nderir\cb1 \
+\cb3 - 3. git commit -m "mesaj" --> Staging area'dan commit stora dosyalar\uc0\u305 m\u305  g\'f6ndermek i\'e7in kullan\u305 l\u305 r\cb1 \
+\cb3 (Commit yani version yani s\'fcr\'fcm olu\uc0\u351 mu\u351  olur\cb1 \
+\cb3 - 4. git push --> Uzak repo'ya (GitHub) g\'f6ndermek i\'e7in kulland\uc0\u305 \u287 \u305 m\u305 z kod.\cb1 \
+\cb3 Yaln\uc0\u305 z git push komutunu direk kullanmak istersek bir kere\cb1 \
+\cb3                 git remote add origin - github'daki olu\uc0\u351 turdu\u287 umuz repo'nun adresi -\cb1 \
+\cb3                 git push -u origin master\cb1 \
+\cb3                 -- Bu iki komutu tek seferde kulland\uc0\u305 ktan sonra di\u287 er commit'lerden sonra sadece\cb1 \
+\cb3                 git push komutu kullan\uc0\u305 r\u305 z.\cb1 \
+\
+\cb3 --------Kurulum:\cb1 \
+\cb3 1. Adim: Git uygulamasini indir ve kur (https://www.git-scm.com/)\cb1 \
+\cb3 2. Adim: GitHub hesap ve Repository olustur\cb1 \
+\cb3 3. Adim: Ornek bir proje olustur ve once Git e sonra GitHub a yedekle\cb1 \
+\
+\cb3 --------Komutlar\cb1 \
+\cb3 git --version \cb1 \
+\cb3 git config --global user.email "email_adresiniz"\cb1 \
+\cb3 git config --global user.name "isminiz"\cb1 \
+\cb3 git config --global -l --> Ayarlar\uc0\u305  listeler\cb1 \
+\cb3 git init --> git ile ili\uc0\u351 kilendirir\cb1 \
+\cb3 git status --> Working Space ve Staged deki de\uc0\u287 i\u351 iklikleri g\'f6sterir\cb1 \
+\cb3 git add . --> Working'den staging area'ya g\'f6nderir\cb1 \
+\cb3 git status \cb1 \
+\cb3 git diff --> Working space deki de\uc0\u287 i\u351 ikli\u287 i g\'f6sterir\cb1 \
+\cb3 git diff --staged --> Staging Area daki de\uc0\u287 i\u351 iklikleri g\'f6sterir\cb1 \
+\cb3 git commit -m "first commit"\cb1 \
+\cb3 git show "hashcode" --> Versiyondaki de\uc0\u287 i\u351 iklikleri g\'f6sterir\cb1 \
+\cb3 git log --oneline\cb1 \
+\cb3 git remote add origin https://github.com/techproed2020/Git_...\cb1 \
+\cb3 git push -u origin master\cb1 \
+\
+\
+\
+\cb3  - KULLANICI BILGILERI :\cb1 \
+\cb3     \cb1 \
+\cb3     git config --global user.name "kullan\uc0\u305 c\u305  ad\u305  / rumuz"\cb1 \
+\cb3     git config --global user.email "E-posta"\cb1 \
+\cb3     git config --list             # Calisma ve kullanici bilgilerini g\'f6ster\cb1 \
+\
+\
+\
+\cb3  - YEREL DEPO :\cb1 \
+\
+\cb3     git add <DOSYA(LAR)>          # Yeni ve degismis dosyalari guncellenecekler listesine ekle\cb1 \
+\cb3     git add .                     # Yeni ve degismis dosyalarin tumunu guncellenecekler listesine ekle\cb1 \
+\cb3     git add -u                    # Silinmis ve degistirilmis dosyalari guncellenecekler listesine ekle\cb1 \
+\cb3     git rm <DOSYA(LAR)>           # Calisma agac\uc0\u305 nda ve dizinde dosyalari kaldir\cb1 \
+\cb3     git rm -f                     # Calisma agac\uc0\u305 nda ve dizinde dosyalari zorla kaldir\cb1 \
+\cb3     git commit -m 'not'           # De\uc0\u287 isiklikleri depoya kaydet\cb1 \
+\cb3     git commit -a -m "not"        # Tum de\uc0\u287 isiklikleri depoya kaydet\cb1 \
+\cb3     cat .gitignore                # Dosyayi depoya ekleme\cb1 \
+\cb3     git rm --cached <DOSYA>       # Dosyayi takip etmeyi birak\cb1 \
+\cb3     git diff                      # Degisiklikler arasindaki farklari goster\cb1 \
+\cb3     git diff --cached             # Listeye Eklenen De\uc0\u287 i\u351 iklikler Aras\u305 ndaki Farklar\u305  G\'f6ster\cb1 \
+\cb3     git status                    # Calisma agacindaki durumu goster\cb1 \
+\cb3     git log                       # Islem gunlugunu goster \cb1 \
+\
+\cb3     \cb1 \
+\cb3     \cb1 \
+\cb3  - UZAK DEPO :\cb1 \
+\cb3  \cb1 \
+\cb3    git clone <ADRES>              # Uzaktaki depoyu klonla\cb1 \
+\cb3    git pull                       # Depodaki son degisiklikleri al\cb1 \
+\cb3    git push                       # Yereldeki degisiklikleri uzak depoda uygula (origin master)komutuda eklenebilir\cb1 \
+\cb3    \cb1 \
+\cb3    \cb1 \
+\cb3    \cb1 \
+\cb3       \cb1 \
+\cb3  - DAL (BRANCH) KOMUTLARI :\cb1 \
+\cb3  \cb1 \
+\cb3    git branch <DAL ADI>           # Dal olustur\cb1 \
+\cb3    git branch                     # Dallari goster\cb1 \
+\cb3    git checkout <DAL ADI>         # Calisilan dali degistir    \cb1 \
+\cb3    git merge <DAL ADI>            # Dallari birlestir\cb1 \
+\cb3    git branch -d <DAL ADI>        # Dal sil\cb1 \
+\cb3  \cb1 \
+\cb3  \cb1 \
+\cb3     \cb1 \
+\cb3  - DIGER KOMUTLAR :\cb1 \
+\cb3  \cb1 \
+\cb3    git --version                  # Git versiyon numaras\uc0\u305 n\u305   g\'f6ster\cb1 \
+\cb3    git --help                     # Git yard\uc0\u305 m sayfas\u305 n\u305  g\'f6ster \cb1 \
+\cb3    git remote -v                  # Uzak depo adresini ver\cb1 \
+\cb3    git remote set-url origin url  # Uzak depo adresini de\uc0\u287 i\u351 tir\cb1 \
+\cb3    git remote rm origin           # Uzak depodaki adresi siler\cb1 \
+\cb3    git log --since=<LIMIT>        # Iki zaman araligindaki commitleri goster\cb1 \
+\cb3    git shortlog -s                # Commit yapanlarin isim ve commit sayilarini goster\cb1 \
+\cb3    git shortlog -e                # Commit yapanlarin isim ve E-postalarini goster\cb1 \
+\cb3    git shortlog -n                # Commit yapanlari commit sayisina gore sirala \cb1 \
+\cb3    git reset -- hard HEAD         # Son yap\uc0\u305 lan degisiklikleri iptal ederek HEAD geri don\cb1 \
+\cb3    git checkout -- <DOSYA>        # Sadece bir dosyayi depodaki haline geri getir\cb1 \
+\cb3    git revert HEAD                # Son yapilan commiti geri al\cb1 \
+\cb3    git stash                      # Commit yapilmamis degisiklikleri kaydet\cb1 \
+\cb3    git stash pop                  # Commit yapilmamis degisikliklere geri don\cb1 \
+\cb3    git stash list                 # Commit yapilmamis degisiklikleri listele\cb1 \
+\cb3    git stash drop                 # Commit yapilmamis degisiklikleri kald\uc0\u305 r\cb1 \
+}
